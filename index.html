@@ -1,0 +1,528 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>GRUPO — Learn. Build. Split The Upside.</title>
+<meta name="description" content="GRUPO is the AI-era academy where real skills meet real co-founders. Master a craft, post your venture, recruit your team, and split what you build." />
+
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2220%22 fill=%22%2305070c%22/><path d=%22M50 15 L82 32 V68 L50 85 L18 68 V32 Z%22 stroke=%22%2300e5ff%22 stroke-width=%224%22 fill=%22none%22/></svg>">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<!-- ================= BACKGROUND LAYERS ================= -->
+<canvas id="scene"></canvas>
+<div class="grain"></div>
+<div class="scanline"></div>
+<div class="vignette"></div>
+
+<!-- ================= NAV ================= -->
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="#top" class="logo">
+      <span class="logo-mark" aria-hidden="true">
+        <svg viewBox="0 0 100 100"><path d="M50 6 L92 28 V72 L50 94 L8 72 V28 Z" /><path class="logo-inner" d="M50 26 L74 39 V61 L50 74 L26 61 V39 Z" /></svg>
+      </span>
+      <span class="logo-text">GRUPO<span class="logo-dot">•</span></span>
+    </a>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#pillars">System</a>
+      <a href="#build">Build Marketplace</a>
+      <a href="#split">Split Engine</a>
+      <a href="#courses">Courses</a>
+      <a href="#pricing">Access</a>
+      <a href="#pricing" class="mobile-login-link">Log In</a>
+    </nav>
+
+    <div class="nav-actions">
+      <a href="#pricing" class="btn btn-ghost">Log In</a>
+      <a href="#apply" class="btn btn-primary">Apply Now</a>
+      <button class="nav-burger" id="navBurger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ================= HERO ================= -->
+  <section class="hero" id="hero">
+    <div class="hud-frame" aria-hidden="true">
+      <span class="hud-corner tl"></span><span class="hud-corner tr"></span>
+      <span class="hud-corner bl"></span><span class="hud-corner br"></span>
+      <div class="hud-readout hud-tl">
+        <span>SYS.STATUS <em>ONLINE</em></span>
+        <span>NODES <em id="hudNodes">000</em></span>
+      </div>
+      <div class="hud-readout hud-tr">
+        <span>BUILD.INDEX <em id="hudBuild">038%</em></span>
+        <span>SEC <em>AES-256</em></span>
+      </div>
+      <div class="hud-readout hud-bl">
+        <span>COORD <em id="hudCoord">51.5N / 0.1W</em></span>
+      </div>
+      <div class="hud-readout hud-br">
+        <span>REV.SHARE <em id="hudRev">$0</em></span>
+      </div>
+    </div>
+
+    <div class="hero-content">
+      <p class="eyebrow reveal"><span class="pulse-dot"></span> THE ACADEMY FOR BUILDERS — NOT SPECTATORS</p>
+      <h1 class="hero-title reveal">
+        STOP LEARNING<br>
+        IN <span class="text-strike">ISOLATION</span>.<br>
+        <span class="grad-text">START BUILDING EMPIRES.</span>
+      </h1>
+      <p class="hero-sub reveal">
+        GRUPO is the AI-era academy where real skills meet real co-founders. Master a craft,
+        post your next venture, recruit vetted builders, and automatically split what you build — together.
+      </p>
+      <div class="hero-cta reveal">
+        <a href="#apply" class="btn btn-primary btn-lg">Apply For Access <span class="arrow">→</span></a>
+        <a href="#split" class="btn btn-ghost btn-lg">See How Splits Work</a>
+      </div>
+    </div>
+
+    <div class="hero-stats reveal">
+      <div class="stat"><span class="stat-num" data-count="18420">0</span><span class="stat-label">Builders Inside</span></div>
+      <div class="stat"><span class="stat-num" data-count="612">0</span><span class="stat-label">Active Ventures</span></div>
+      <div class="stat"><span class="stat-num" data-count="4200000" data-prefix="$" data-suffix="+">0</span><span class="stat-label">Revenue Split To Date</span></div>
+      <div class="stat"><span class="stat-num" data-count="94">0</span><span class="stat-label">Countries</span></div>
+    </div>
+
+    <div class="scroll-cue" aria-hidden="true"><span></span>SCROLL</div>
+  </section>
+
+  <!-- ================= MARQUEE ================= -->
+  <div class="marquee">
+    <div class="marquee-track">
+      <span>AI &amp; AUTOMATION</span><span>•</span><span>PERFORMANCE MARKETING</span><span>•</span>
+      <span>SALES &amp; CLOSING</span><span>•</span><span>NO-CODE / DEV</span><span>•</span>
+      <span>VIDEO EDITING</span><span>•</span><span>BRAND &amp; DESIGN</span><span>•</span>
+      <span>COPYWRITING</span><span>•</span><span>FINANCE &amp; TRADING</span><span>•</span>
+      <span>AI &amp; AUTOMATION</span><span>•</span><span>PERFORMANCE MARKETING</span><span>•</span>
+      <span>SALES &amp; CLOSING</span><span>•</span><span>NO-CODE / DEV</span><span>•</span>
+      <span>VIDEO EDITING</span><span>•</span><span>BRAND &amp; DESIGN</span><span>•</span>
+      <span>COPYWRITING</span><span>•</span><span>FINANCE &amp; TRADING</span><span>•</span>
+    </div>
+  </div>
+
+  <!-- ================= THE OLD WAY ================= -->
+  <section class="section compare">
+    <div class="section-head reveal">
+      <p class="kicker">// 01 — THE PROBLEM</p>
+      <h2>Every other "academy" ends the same way.</h2>
+      <p class="section-sub">You finish the course. You have the skill. You have nobody to build with. So the knowledge sits in a folder, and you go back to your job.</p>
+    </div>
+
+    <div class="compare-grid reveal">
+      <div class="compare-col old">
+        <h3>The Old Way</h3>
+        <ul>
+          <li>Watch videos alone in a group chat of 300,000 people</li>
+          <li>"Motivation" content, zero real collaboration</li>
+          <li>No proof anyone actually applies what they learn</li>
+          <li>You finish a course and still have no team, no traction</li>
+          <li>Pay a subscription and hope inspiration strikes</li>
+        </ul>
+      </div>
+      <div class="compare-col new">
+        <h3>The GRUPO Way</h3>
+        <ul>
+          <li>Learn from operators, then build with a live matched team</li>
+          <li>Real ventures, real roles, real upside — tracked on-platform</li>
+          <li>Skill badges verified by graded work, not vibes</li>
+          <li>You finish a sprint with a shipped product and a co-builder crew</li>
+          <li>Pay for access, get matched with people who can execute</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= PILLARS ================= -->
+  <section class="section pillars" id="pillars">
+    <div class="section-head reveal">
+      <p class="kicker">// 02 — THE SYSTEM</p>
+      <h2>One loop. Three moves.</h2>
+      <p class="section-sub">Learn a craft. Build something real with people who complement your skills. Split the result. Repeat, compounding your track record every cycle.</p>
+    </div>
+
+    <div class="pillar-grid">
+      <article class="pillar-card reveal">
+        <div class="pillar-index">01</div>
+        <div class="pillar-icon"><svg viewBox="0 0 48 48"><path d="M24 6 44 16 24 26 4 16Z"/><path d="M12 21v11c0 4 5 7 12 7s12-3 12-7V21"/><path d="M44 16v14"/></svg></div>
+        <h3>LEARN</h3>
+        <p>Cohort-based and self-paced courses taught by operators who've actually shipped — not narrators reading slides. Every module ends in a graded artifact, not a quiz.</p>
+        <a href="#courses" class="pillar-link">Browse the curriculum →</a>
+      </article>
+
+      <article class="pillar-card reveal">
+        <div class="pillar-index">02</div>
+        <div class="pillar-icon"><svg viewBox="0 0 48 48"><circle cx="14" cy="14" r="7"/><circle cx="34" cy="14" r="7"/><circle cx="24" cy="36" r="7"/><path d="M18 18l-1 12M30 18l1 12"/></svg></div>
+        <h3>BUILD</h3>
+        <p>Post your project or business idea. Define exactly which roles you're missing. GRUPO's matching engine surfaces verified builders — you review, message, and assemble your crew.</p>
+        <a href="#build" class="pillar-link">See the marketplace →</a>
+      </article>
+
+      <article class="pillar-card reveal">
+        <div class="pillar-index">03</div>
+        <div class="pillar-icon"><svg viewBox="0 0 48 48"><path d="M24 4v40M8 16a8 8 0 0 0 16 0M24 32a8 8 0 0 0 16 0"/></svg></div>
+        <h3>SPLIT</h3>
+        <p>Every build gets an auto-generated split sheet. Revenue is tracked, fees are transparent, and payouts run automatically the moment money lands. No spreadsheets, no arguments.</p>
+        <a href="#split" class="pillar-link">See the split engine →</a>
+      </article>
+    </div>
+  </section>
+
+  <!-- ================= BUILD MARKETPLACE ================= -->
+  <section class="section build" id="build">
+    <div class="section-head reveal">
+      <p class="kicker">// 03 — THE TWIST</p>
+      <h2>You don't graduate into a void. You graduate into a team.</h2>
+      <p class="section-sub">This is what no other academy offers: a live marketplace where students post real projects and other students apply to co-build them.</p>
+    </div>
+
+    <div class="scenario reveal">
+      <div class="scenario-tag">EXAMPLE SCENARIO</div>
+      <p>
+        <strong>"I know how to build apps.</strong> I don't know how to market them, and I definitely can't edit video.
+        I post my project on GRUPO, mark it <em>Open for Co-Builders</em>, and set two open roles: <strong>Growth Marketer</strong> and <strong>Video Editor</strong>.
+        Verified students apply with their portfolio and course badges. I review, pick two, and we agree on a split —
+        all before writing a single line of a contract by hand."
+      </p>
+    </div>
+
+    <div class="steps reveal">
+      <div class="step">
+        <div class="step-num">01</div>
+        <h4>Post the Build</h4>
+        <p>Describe the idea, the stage it's at, and the exact roles you need filled — with equity or revenue-share range attached upfront.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">02</div>
+        <h4>Get Matched</h4>
+        <p>The engine ranks applicants by verified skill badge, portfolio, Builder Score, and availability. You never sort through noise.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">03</div>
+        <h4>Auto-Contract</h4>
+        <p>Accept an applicant and GRUPO generates a plain-English Collaboration Agreement with the split, vesting, and IP terms pre-filled.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">04</div>
+        <h4>Ship in the Workspace</h4>
+        <p>Milestones, files, and async updates live in a shared build room — so progress (or the lack of it) is visible to every co-builder.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">05</div>
+        <h4>Split Automatically</h4>
+        <p>Connect a payment source and revenue is divided the moment it lands, per the agreement. No invoicing your co-founder.</p>
+      </div>
+    </div>
+
+    <div class="role-tags reveal">
+      <span>Growth Marketer</span><span>Backend Dev</span><span>Video Editor</span><span>Brand Designer</span>
+      <span>Copywriter</span><span>Community Manager</span><span>Sales Closer</span><span>Data / AI Engineer</span>
+      <span>Ops / Finance</span><span>Content Creator</span>
+    </div>
+  </section>
+
+  <!-- ================= SPLIT ENGINE ================= -->
+  <section class="section split" id="split">
+    <div class="section-head reveal">
+      <p class="kicker">// 04 — SOLVED FOR YOU</p>
+      <h2>The hardest part of co-founding, handled.</h2>
+      <p class="section-sub">"How do we split this fairly?" kills more collaborations than bad ideas do. GRUPO ships every build with a default model so nobody has to improvise a cap table over DMs.</p>
+    </div>
+
+    <div class="model-grid reveal">
+      <div class="model-card">
+        <h4>Revenue Share</h4>
+        <p class="model-best-for">Best for: pre-revenue ideas, short sprints</p>
+        <p>Everyone takes a % of net revenue for a fixed window (e.g. 12–24 months). No valuation needed, no risk of diluting an idea that hasn't earned a cent yet.</p>
+      </div>
+      <div class="model-card">
+        <h4>Milestone Equity</h4>
+        <p class="model-best-for">Best for: long-term ventures, co-founders</p>
+        <p>Ownership % vests as agreed milestones ship — not just as time passes. Protects the founder from a co-builder who disappears after week two.</p>
+      </div>
+      <div class="model-card featured">
+        <div class="model-flag">GRUPO RECOMMENDS</div>
+        <h4>Hybrid Vesting <span class="tag-mono">"Split Sheet"</span></h4>
+        <p class="model-best-for">Best for: almost everything on the platform</p>
+        <p>Contributors earn <strong>revenue share now</strong>, which converts into <strong>real equity</strong> once they cross a milestone threshold — like a SAFE, but for collaboration instead of capital.</p>
+      </div>
+    </div>
+
+    <div class="how-fee reveal">
+      <div class="fee-point">
+        <h5>Platform fee only on realized revenue</h5>
+        <p>GRUPO takes a flat 5% (3% on Founder plan) of revenue actually processed through the platform — never a cut of unrealized equity. We only get paid when builders get paid.</p>
+      </div>
+      <div class="fee-point">
+        <h5>Reputation replaces enforcement</h5>
+        <p>Every split, deadline, and dispute affects a builder's public Builder Score. Bad actors can't just create a new account and re-enter the marketplace.</p>
+      </div>
+      <div class="fee-point">
+        <h5>Escrow on first payout</h5>
+        <p>First revenue event on any build is held in escrow for 5 days so every co-builder can confirm the split matches the signed agreement before funds release.</p>
+      </div>
+    </div>
+
+    <!-- Interactive Split Simulator -->
+    <div class="simulator reveal" id="simulator">
+      <div class="sim-head">
+        <p class="kicker">LIVE TOOL</p>
+        <h3>Split Simulator</h3>
+        <p class="section-sub" style="margin:0">Drag to see how a monthly revenue split actually plays out before you post a build.</p>
+      </div>
+
+      <div class="sim-body">
+        <div class="sim-revenue">
+          <label for="simRevenue">Monthly Revenue</label>
+          <div class="sim-revenue-value">$<span id="simRevenueVal">10,000</span></div>
+          <input type="range" id="simRevenue" min="500" max="100000" step="500" value="10000" />
+        </div>
+
+        <div class="sim-roles" id="simRoles">
+          <!-- rows injected by JS -->
+        </div>
+
+        <div class="sim-summary">
+          <div class="sim-summary-row">
+            <span>Platform Fee (5%)</span>
+            <strong id="simFee">$500</strong>
+          </div>
+          <div class="sim-summary-row total">
+            <span>Distributed to Builders</span>
+            <strong id="simDistributed">$9,500</strong>
+          </div>
+          <div class="sim-warning" id="simWarning"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= TRUST / RANKS ================= -->
+  <section class="section ranks">
+    <div class="section-head reveal">
+      <p class="kicker">// 05 — TRUST LAYER</p>
+      <h2>Skill has to be earned before it's trusted.</h2>
+      <p class="section-sub">Course completions aren't badges of attendance — they're graded gates. Your rank determines which builds you can apply to.</p>
+    </div>
+
+    <div class="rank-track reveal">
+      <div class="rank-node active">
+        <div class="rank-dot"></div>
+        <h5>RECRUIT</h5>
+        <p>Complete onboarding + 1 core course</p>
+      </div>
+      <div class="rank-node">
+        <div class="rank-dot"></div>
+        <h5>OPERATOR</h5>
+        <p>3 graded projects, verified skill badge</p>
+      </div>
+      <div class="rank-node">
+        <div class="rank-dot"></div>
+        <h5>ARCHITECT</h5>
+        <p>Shipped a build, positive Builder Score</p>
+      </div>
+      <div class="rank-node">
+        <div class="rank-dot"></div>
+        <h5>LEGEND</h5>
+        <p>Multiple successful splits, mentor status</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= COURSES ================= -->
+  <section class="section courses" id="courses">
+    <div class="section-head reveal">
+      <p class="kicker">// 06 — CURRICULUM</p>
+      <h2>Learn the exact skill your next build needs.</h2>
+      <p class="section-sub">Every track is built and taught by people currently operating in the field — updated as the tools change, not once a year.</p>
+    </div>
+
+    <div class="course-grid reveal">
+      <article class="course-card">
+        <span class="course-icon">◆</span>
+        <h4>AI &amp; Automation</h4>
+        <p>Agents, workflows, and no-code AI systems that replace entire departments.</p>
+        <span class="course-meta">32 lessons</span>
+      </article>
+      <article class="course-card">
+        <span class="course-icon">▲</span>
+        <h4>Performance Marketing</h4>
+        <p>Paid acquisition, funnels, and attribution that survive contact with a real budget.</p>
+        <span class="course-meta">28 lessons</span>
+      </article>
+      <article class="course-card">
+        <span class="course-icon">●</span>
+        <h4>Sales &amp; Closing</h4>
+        <p>Cold outreach, objection handling, and closing frameworks for high-ticket offers.</p>
+        <span class="course-meta">24 lessons</span>
+      </article>
+      <article class="course-card">
+        <span class="course-icon">■</span>
+        <h4>No-Code / Dev</h4>
+        <p>Ship a working product fast — from no-code MVPs to full-stack fundamentals.</p>
+        <span class="course-meta">35 lessons</span>
+      </article>
+      <article class="course-card">
+        <span class="course-icon">◈</span>
+        <h4>Video Editing</h4>
+        <p>Short-form and long-form editing systems that make content actually retain viewers.</p>
+        <span class="course-meta">21 lessons</span>
+      </article>
+      <article class="course-card">
+        <span class="course-icon">◇</span>
+        <h4>Brand &amp; Design</h4>
+        <p>Identity, UI, and visual systems that make a one-person build look like a real company.</p>
+        <span class="course-meta">19 lessons</span>
+      </article>
+      <article class="course-card">
+        <span class="course-icon">▶</span>
+        <h4>Copywriting</h4>
+        <p>Direct-response copy for landing pages, ads, and email that convert on day one.</p>
+        <span class="course-meta">18 lessons</span>
+      </article>
+      <article class="course-card">
+        <span class="course-icon">◎</span>
+        <h4>Finance &amp; Trading</h4>
+        <p>Markets, risk management, and the numbers literacy every founder needs.</p>
+        <span class="course-meta">26 lessons</span>
+      </article>
+    </div>
+  </section>
+
+  <!-- ================= PRICING ================= -->
+  <section class="section pricing" id="pricing">
+    <div class="section-head reveal">
+      <p class="kicker">// 07 — ACCESS</p>
+      <h2>Pick your level of access.</h2>
+      <p class="section-sub">Every tier includes the trust layer and split engine — the difference is how much of the marketplace you can use.</p>
+    </div>
+
+    <div class="pricing-grid reveal">
+      <div class="price-card">
+        <h4>Observer</h4>
+        <div class="price">$0<span>/mo</span></div>
+        <ul>
+          <li>Browse all course previews</li>
+          <li>View the build marketplace</li>
+          <li>Community access (read-only)</li>
+          <li>No project applications</li>
+        </ul>
+        <a href="#apply" class="btn btn-ghost btn-block">Start Free</a>
+      </div>
+
+      <div class="price-card featured">
+        <div class="price-flag">MOST BUILDERS CHOOSE THIS</div>
+        <h4>Builder</h4>
+        <div class="price">$49<span>/mo</span></div>
+        <ul>
+          <li>Full course library + certifications</li>
+          <li>Apply to unlimited builds</li>
+          <li>Skill verification &amp; Builder Score</li>
+          <li>Standard 5% platform fee on revenue</li>
+        </ul>
+        <a href="#apply" class="btn btn-primary btn-block">Apply Now</a>
+      </div>
+
+      <div class="price-card">
+        <h4>Founder</h4>
+        <div class="price">$149<span>/mo</span></div>
+        <ul>
+          <li>Everything in Builder</li>
+          <li>Post unlimited builds &amp; roles</li>
+          <li>Priority matching + applicant screening</li>
+          <li>Reduced 3% platform fee on revenue</li>
+        </ul>
+        <a href="#apply" class="btn btn-ghost btn-block">Apply Now</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SOCIAL PROOF ================= -->
+  <section class="section proof">
+    <div class="section-head reveal">
+      <p class="kicker">// 08 — EARLY SIGNAL</p>
+      <h2>What early builders are saying.</h2>
+    </div>
+    <div class="proof-grid reveal">
+      <blockquote class="proof-card">
+        <p>"I taught myself backend dev in the courses, then found my marketing co-builder through the exact system this page describes. We split 50/30/20 and shipped in six weeks."</p>
+        <footer>— Builder, App Venture</footer>
+      </blockquote>
+      <blockquote class="proof-card">
+        <p>"The split sheet removed the one conversation every team avoids having until it's too late. We agreed on terms before we wrote a line of code."</p>
+        <footer>— Founder, SaaS Build</footer>
+      </blockquote>
+      <blockquote class="proof-card">
+        <p>"I'm an editor. I don't want to run a company — I want to plug into one. This is the only place built for that."</p>
+        <footer>— Builder, Video Editor</footer>
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- ================= FINAL CTA ================= -->
+  <section class="section final-cta" id="apply">
+    <div class="cta-frame reveal">
+      <p class="kicker">// ACCESS REQUEST</p>
+      <h2>Your next venture is one application away.</h2>
+      <p class="section-sub">Applications are reviewed manually to keep the builder pool high-signal. Tell us what you know and what you're looking to build.</p>
+      <form class="apply-form" onsubmit="event.preventDefault(); this.querySelector('.btn').textContent='Request Received ✓'; this.querySelector('.btn').disabled=true;">
+        <input type="email" required placeholder="you@domain.com" aria-label="Email address" />
+        <button type="submit" class="btn btn-primary">Request Access <span class="arrow">→</span></button>
+      </form>
+      <p class="fine-print">No spam. No courses pushed on you daily. Just an access decision within 48 hours.</p>
+    </div>
+  </section>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <span class="logo-text">GRUPO<span class="logo-dot">•</span></span>
+      <p>Learn. Build. Split the upside.</p>
+    </div>
+    <div class="footer-cols">
+      <div>
+        <h6>Platform</h6>
+        <a href="#pillars">System</a>
+        <a href="#build">Build Marketplace</a>
+        <a href="#split">Split Engine</a>
+        <a href="#courses">Courses</a>
+      </div>
+      <div>
+        <h6>Company</h6>
+        <a href="#pricing">Access</a>
+        <a href="#apply">Apply</a>
+        <a href="#top">About</a>
+      </div>
+      <div>
+        <h6>Legal</h6>
+        <a href="#">Terms</a>
+        <a href="#">Privacy</a>
+        <a href="#">Collaboration Agreement</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© <span id="year"></span> GRUPO. All rights reserved.</span>
+    <span class="footer-mono">BUILD.STATUS: OPERATIONAL</span>
+  </div>
+</footer>
+
+<script src="js/vendor/three.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
